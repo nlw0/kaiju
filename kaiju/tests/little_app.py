@@ -12,7 +12,7 @@ trilotest.connect_database()
 @trilotest(output="bigdata")
 def generate_uniform(a, b, sample_size, seed=1138):
     random.seed(seed)
-    for _ in xrange(sample_size):
+    for _ in range(sample_size):
         yield random.randint(a, b)
 
 
